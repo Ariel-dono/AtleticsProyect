@@ -15,7 +15,7 @@
                     </div>
                     <div class="row">
                         <div class="containerCustom containerDifferentialColor">
-                            <h3 class="text-center">Bienvenido a la casa del atletismo mundial</h3>
+                            <h3 class="text-center">Bienvenido a la casa del atletismo mundial.</h3>
                         </div>
                     </div>
                 </div>
