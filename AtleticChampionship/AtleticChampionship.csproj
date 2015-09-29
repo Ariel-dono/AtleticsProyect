@@ -155,8 +155,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Login.aspx" />
+    <Content Include="Account\PublicRegister.aspx" />
     <Content Include="Account\Register.aspx" />
-    <Content Include="Administration\Administration.aspx" />
+    <Content Include="Administration\Administracion.aspx" />
+    <Content Include="Administration\DataManagement.aspx" />
+    <Content Include="Administration\RealTimeManagement.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
@@ -167,10 +170,15 @@
     <Content Include="Account\Web.config" />
     <Content Include="Administration\Administration.Master" />
     <Content Include="Administration\Administration.Mobile.Master" />
+    <Content Include="PublicUser\GeneralData.aspx" />
+    <Content Include="PublicUser\MainPage.aspx" />
+    <Content Include="PublicUser\PublicUser.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Historia.aspx" />
     <Content Include="Images\Background.jpg" />
-    <Content Include="Images\logo.png" />
+    <Content Include="Images\background2.jpg" />
     <Content Include="Images\logo2.png" />
+    <Content Include="PublicUser\UserData.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -226,12 +234,26 @@
     <Compile Include="Account\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Account\PublicRegister.aspx.cs">
+      <DependentUpon>PublicRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\PublicRegister.aspx.designer.cs">
+      <DependentUpon>PublicRegister.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Account\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Administracion.aspx.cs">
+      <DependentUpon>Administracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Administracion.aspx.designer.cs">
+      <DependentUpon>Administracion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administration\Administration.Master.cs">
       <DependentUpon>Administration.Master</DependentUpon>
@@ -247,12 +269,19 @@
     <Compile Include="Administration\Administration.Mobile.Master.designer.cs">
       <DependentUpon>Administration.Mobile.Master</DependentUpon>
     </Compile>
-    <Compile Include="Administration\Administration.aspx.cs">
-      <DependentUpon>Administration.aspx</DependentUpon>
+    <Compile Include="Administration\DataManagement.aspx.cs">
+      <DependentUpon>DataManagement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Administration\Administration.aspx.designer.cs">
-      <DependentUpon>Administration.aspx</DependentUpon>
+    <Compile Include="Administration\DataManagement.aspx.designer.cs">
+      <DependentUpon>DataManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\RealTimeManagement.aspx.cs">
+      <DependentUpon>RealTimeManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\RealTimeManagement.aspx.designer.cs">
+      <DependentUpon>RealTimeManagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Data\DBManager.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -269,8 +298,43 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Historia.aspx.cs">
+      <DependentUpon>Historia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Historia.aspx.designer.cs">
+      <DependentUpon>Historia.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicUser\GeneralData.aspx.cs">
+      <DependentUpon>GeneralData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublicUser\GeneralData.aspx.designer.cs">
+      <DependentUpon>GeneralData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PublicUser\MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublicUser\MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PublicUser\PublicUser.Master.cs">
+      <DependentUpon>PublicUser.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublicUser\PublicUser.Master.designer.cs">
+      <DependentUpon>PublicUser.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PublicUser\UserData.aspx.cs">
+      <DependentUpon>UserData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublicUser\UserData.aspx.designer.cs">
+      <DependentUpon>UserData.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

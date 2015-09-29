@@ -12,10 +12,7 @@ html {
 }
 
 body {
-    margin: 0;
-    background-image: url(../Images/Background.jpg); 
-    background-size: cover;
-
+    margin: 0; 
 }
 
 article,
@@ -3971,7 +3968,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 .navbar-collapse {
     max-height: 340px;
     overflow-x: visible;
-    padding-right: 15px;
+    padding-right: 30px;
     padding-left: 15px;
     border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
@@ -3990,7 +3987,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
     }
 
         .navbar-collapse.collapse {
-            display: block !important;
+            display: table-row !important;
             height: auto !important;
             padding-bottom: 0;
             overflow: visible !important;
@@ -6268,28 +6265,31 @@ button.close {
     }
 }
 
-.separatorHeader{
-    padding-top: 17%;
+.containerTop{
+    padding-top: 15%;
 }
 
-.containerPaddingBottom{
-    padding-bottom: 15%;
+.containerBottom{
+    padding-bottom: 14%;
 }
 
-.separatorContainer{
-    padding-top: 10px;
+.containerBottom2{
+    padding-bottom: 13.6%;
 }
 
-.separatorContainer2{
-    padding-bottom: 15px;
-    padding-top: 5px;
+.separatorTopContainer{
+    padding-top: 5%;
 }
 
-.containerCustom{
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+.separatorBottomContainer{
+    padding-bottom: 18px;
+}
+
+.containerBorder{
+    padding-top: 15px; 
+    padding-bottom: 15px; 
+    padding-left: 15px; 
+    padding-right: 15px; 
 }
 
 .containerColor{
@@ -6298,7 +6298,7 @@ button.close {
 }
 
 .containerOpacity{
-    opacity: 0.8;
+    opacity: 0.85;
 }
 
 .buttomCustom{
@@ -6321,22 +6321,25 @@ button.close {
     vertical-align: middle !important;
 }
 
-.containerAlignVertical{
-    vertical-align: central;
-}
-
-.paddingNegative{
-    padding-top: -55px !important;
-}
-
 .containerDifferentialColor{
     background-color: #333;
 }
 
-navBackground{
-    background-image: url(../Images/logo2.png);
+.navBackground{
+    background-image: url(../Images/logo2.png) !important;
+    background-size: cover;
 }
 
-.alignImage{
-    padding-left: 50px;
+.containerBackground{
+    background-image: url(../Images/Background.jpg);
+    background-size: cover;
+}
+
+.containerUserBackground{
+    background-image: url(../Images/background2.jpg);
+    background-size: cover;
+}
+
+.backgroundColor{
+    background-color:#333;
 }

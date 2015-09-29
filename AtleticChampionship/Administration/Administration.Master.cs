@@ -69,7 +69,10 @@ namespace AtleticChampionship
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (connectionDB.getLoggedTypeState() == 1)
+            {
+                Response.Redirect("~/PublicUser/MainPage.aspx");
+            }
         }
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)

@@ -20,7 +20,14 @@ namespace AtleticChampionship.Account
         {
             if (connectionDB.getLoggedState() != -1)
             {
-                Response.Redirect("~/Administration/Administration.aspx");
+                if (connectionDB.getLoggedTypeState() == 0)
+                {
+                    Response.Redirect("~/Administration/Administracion.aspx");
+                }
+                else
+                {
+                    Response.Redirect("~/PublicUser/MainPage.aspx");
+                }
             }
         }
 
@@ -31,9 +38,17 @@ namespace AtleticChampionship.Account
             Command.Parameters.Add("@pNombreUsuario", SqlDbType.NVarChar).Value = UserName.Text;
             Command.Parameters.Add("@pContrasenna", SqlDbType.NVarChar).Value = Password.Text;
             connectionDB.signIn(Command);
+            Command.Parameters.Clear();
             if (connectionDB.getLoggedState() != -1)
             {
-                Response.Redirect("~/Administration/Administration.aspx");
+                if (connectionDB.getLoggedTypeState() == 0)
+                {
+                    Response.Redirect("~/Administration/Administracion.aspx");
+                }
+                else
+                {
+                    Response.Redirect("~/PublicUser/MainPage.aspx");
+                }
             }
             else
             {

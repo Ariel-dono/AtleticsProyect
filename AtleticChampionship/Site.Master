@@ -16,7 +16,7 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
-<body>
+<body class="backgroundColor">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -40,27 +40,35 @@
         </asp:ScriptManager>
 
         <div class="container">
-                <div class="row">
-                    <div class="navbar-inverse">
+            <div class="navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="row">
                         <button type="button" class="navbar-toggle navbar" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" runat="server" href="~/">IAAF</a>
-                        <a class="navbar-brand" runat="server" href="~/">Historia</a>
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Login">Iniciar sesión</a></li>
-                            </ul>
+                        <div class="col-md-6">
+                            <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li><a class="navbar-brand" runat="server" href="~/">IAAF</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="navbar-collapse collapse navbar-right">
+                                <ul class="nav navbar-nav">
+                                    <li><a class="navbar-brand" runat="server" href="~/Account/PublicRegister">Registro</a></li>
+                                    <li><a class="navbar-brand" runat="server" href="~/Account/Login">Ingresar</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
-                    </asp:ContentPlaceHolder>
-                </div>
+            </div>
         </div>
+        <asp:ContentPlaceHolder runat="server" ID="MainContent">
+        </asp:ContentPlaceHolder>
     </form>
 </body>
 </html>

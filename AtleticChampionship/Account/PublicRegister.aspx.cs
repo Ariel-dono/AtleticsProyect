@@ -1,11 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.Owin;
-using Owin;
-using AtleticChampionship.Models;
+using System.Web.UI.WebControls;
 using Microsoft.SqlServer.Server;
 using System.Data;
 using System.Data.SqlClient;
@@ -14,9 +12,13 @@ using System.Diagnostics;
 
 namespace AtleticChampionship.Account
 {
-    public partial class Register : Page
+    public partial class PublicRegister : System.Web.UI.Page
     {
         private static SqlCommand SQLcommand = new SqlCommand();
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
         protected void CreateUser_Click(object sender, EventArgs e)
         {
             SQLcommand.CommandText = "addUsuario";
@@ -34,7 +36,7 @@ namespace AtleticChampionship.Account
             outputValue.Direction = ParameterDirection.InputOutput;
             SQLcommand.Parameters.Add(outputValue);
 
-            connectionDB.userSpecialization(SQLcommand, 0);
+            connectionDB.userSpecialization(SQLcommand, 1);
             Cedula.Text = "";
             Nombre.Text = "";
             Apellido.Text = "";

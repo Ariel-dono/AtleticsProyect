@@ -1,11 +1,10 @@
-﻿<%@ Page Title="Registrarse" Language="C#" MasterPageFile="~/Administration/Administration.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="AtleticChampionship.Account.Register" %>
-
-<asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <div class="separatorTopContainer separatorBottomContainer containerUserBackground">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PublicRegister.aspx.cs" Inherits="AtleticChampionship.Account.PublicRegister" %>
+<asp:Content ID="Main" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="separatorTopContainer separatorBottomContainer containerBackground">
         <div class="container containerOpacity containerColor">
-            <div class="container">
+            <div class="container containerBorder">
                 <p class="text-danger">
-                    <asp:Literal runat="server" ID="ErrorMessage" />
+                    <asp:Literal runat="server" ID="ErrorMessage"/>
                 </p>
                 <div class="row">
                     <div class="col-md-12">

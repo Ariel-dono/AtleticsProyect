@@ -7,18 +7,18 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace AtleticChampionship {
+namespace AtleticChampionship.PublicUser {
     
     
-    public partial class Administration {
+    public partial class PublicUser {
         
         /// <summary>
-        /// Control NombreUsuario.
+        /// Control MainContent.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label NombreUsuario;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
     }
 }
