@@ -31,7 +31,8 @@ namespace AtleticChampionship.Account
             SQLcommand.Parameters.Add("@pCedula", SqlDbType.Int).Value = Cedula.Text;
             SQLcommand.Parameters.Add("@pCodigo", SqlDbType.NVarChar).Value = Codigo.Text;
             SQLcommand.Parameters.Add("@pTelefono", SqlDbType.Int).Value = Telefono.Text;
-            SqlParameter outputValue = new SqlParameter("@pEstado", SqlDbType.Int);
+            SQLcommand.Parameters.Add("@pEstado", SqlDbType.Int).Value = 0;
+            SqlParameter outputValue = new SqlParameter("@pEstadoDeEjecucion", SqlDbType.Int);
             outputValue.Value = 0;
             outputValue.Direction = ParameterDirection.InputOutput;
             SQLcommand.Parameters.Add(outputValue);

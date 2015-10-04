@@ -11,5 +11,23 @@ namespace AtleticChampionship.PublicUser {
     
     
     public partial class GeneralData {
+        
+        /// <summary>
+        /// Control DropCampeonatos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox DropCampeonatos;
+        
+        /// <summary>
+        /// Control GeneralInfo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GeneralInfo;
     }
 }

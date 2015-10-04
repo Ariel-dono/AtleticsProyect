@@ -10,6 +10,6 @@
 namespace AtleticChampionship.Administration {
     
     
-    public partial class RealTimeManagement {
+    public partial class DataManagement {
     }
 }

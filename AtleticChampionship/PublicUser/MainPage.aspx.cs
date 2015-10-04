@@ -18,6 +18,7 @@ namespace AtleticChampionship.PublicUser
         private static SqlCommand Command = new SqlCommand();
         protected void Page_Load(object sender, EventArgs e)
         {
+            DataPersonas.Clear();
             Command.CommandText = "getInfoPersonas";
             Command.CommandType = CommandType.StoredProcedure;
             Command.Parameters.Add("@pIdPersona", SqlDbType.Int).Value = connectionDB.getLoggedState();
