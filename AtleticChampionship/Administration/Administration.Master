@@ -53,6 +53,7 @@
                                 <ul class="nav navbar-nav">
                                     <li><a class="navbar-brand" runat="server" href="~/Administration/Administracion.aspx">Información del Delegado</a></li>
                                     <li><a class="navbar-brand" runat="server" href="~/Administration/DataManagement.aspx">Cargar información</a></li>
+                                    <li><a class="navbar-brand" runat="server" href="AdministracionEntidades.aspx">Administrar Entidades</a></li>
                                 </ul>
                             </div>
                         </div>

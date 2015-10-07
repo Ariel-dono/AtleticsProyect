@@ -55,7 +55,7 @@ namespace AtleticChampionship.PublicUser
         {
             Command.Parameters.Clear();
             DataPersonas = new DataTable();
-            Command.CommandText = "spObetenerDatosGeneralesCampeonato";
+            Command.CommandText = "spObtenerDatosGeneralesCampeonato";
             Command.CommandType = CommandType.StoredProcedure;
             Command.Parameters.Add("@pIDCampeonato", SqlDbType.NVarChar).Value = DropCampeonatos.SelectedValue;
             connectionDB.readTransaction(Command);

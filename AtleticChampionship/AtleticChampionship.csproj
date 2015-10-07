@@ -157,7 +157,10 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\PublicRegister.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="Administration\AdmEntidades\Campeonatos.aspx" />
+    <Content Include="Administration\AdmEntidades\Catalogos.aspx" />
     <Content Include="Administration\Administracion.aspx" />
+    <Content Include="Administration\AdministracionEntidades.aspx" />
     <Content Include="Administration\DataManagement.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -247,12 +250,33 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Administration\AdmEntidades\Campeonatos.aspx.cs">
+      <DependentUpon>Campeonatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AdmEntidades\Campeonatos.aspx.designer.cs">
+      <DependentUpon>Campeonatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AdmEntidades\Catalogos.aspx.cs">
+      <DependentUpon>Catalogos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AdmEntidades\Catalogos.aspx.designer.cs">
+      <DependentUpon>Catalogos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Administration\Administracion.aspx.cs">
       <DependentUpon>Administracion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Administration\Administracion.aspx.designer.cs">
       <DependentUpon>Administracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\AdministracionEntidades.aspx.cs">
+      <DependentUpon>AdministracionEntidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\AdministracionEntidades.aspx.designer.cs">
+      <DependentUpon>AdministracionEntidades.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administration\Administration.Master.cs">
       <DependentUpon>Administration.Master</DependentUpon>
